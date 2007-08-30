@@ -120,7 +120,7 @@ Exec=kphone
 Icon=%{name}
 Terminal=false
 Type=Application
-Categories=X-MandrivaLinux-Internet-VideoConference
+Categories=X-MandrivaLinux-Internet-VideoConference;
 EOF
 
 
