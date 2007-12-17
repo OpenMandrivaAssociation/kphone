@@ -13,7 +13,6 @@ BuildRequires:	openssl-devel >= 0.9.6j
 Obsoletes:	libkphone3
 Obsoletes:	libkphone3-devel
 Provides:	libkphone3 libkphone3-devel
-BuildRoot:	%_tmppath/%{name}-%{version}-root-%(id -u -n)
 
 Source:		%{name}-%{version}.tar.bz2
 Source1:	kphone.menu
