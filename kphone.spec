@@ -88,28 +88,14 @@ export LD_LIBRARY_PATH=$QTLIB:$LD_LIBRARY_PATH
 %install
 export PATH=$QTLIB/bin:$PATH
 rm -rf $RPM_BUILD_ROOT
-install -d $RPM_BUILD_ROOT%{_menudir}
 
 %makeinstall_std
 
 # Don't want to patch the Makefile
-install -m 0644 %SOURCE1 %buildroot/%_menudir/kphone
-mkdir -p %{buildroot}{%{_miconsdir},%{_iconsdir},%{_liconsdir},%{_menudir}}
 cp icons/large-kphone.png %{buildroot}%{_liconsdir}/%{iconname}
 cp icons/lo-kphone.png %{buildroot}%{_iconsdir}/%{iconname}
 cp icons/mini-kphone.png %{buildroot}%{_miconsdir}/%{iconname}
 
-install -d -m 755 $RPM_BUILD_ROOT%{_menudir}
-cat >$RPM_BUILD_ROOT%{_menudir}/%{name} <<EOF
-?package(%{name}):\
-    command="%{_bindir}/%{name}"\
-    title="Kphone"\
-    longtitle="Kphone SIP user agent"\
-    needs="x11"\
-    section="Internet/Video Conference"\
-    icon="%{name}.png"\
-    xdg="true"
-EOF
 
 mkdir -p %{buildroot}%{_datadir}/applications
 cat > %{buildroot}%{_datadir}/applications/mandriva-%{name}.desktop << EOF
@@ -133,7 +119,6 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %attr(755,root,root) %{_bindir}/kphone
-%{_menudir}/kphone
 %{_datadir}/apps/kphone/icons/*.png
 %_iconsdir/%iconname
 %_liconsdir/%iconname
