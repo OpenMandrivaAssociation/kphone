@@ -3,8 +3,8 @@
 Summary:	KPhone - SIP user agent
 Name:		kphone
 Version:	4.2
-Release:	%mkrel 8
-License:	GPL
+Release:	%mkrel 9
+License:	GPLv2+
 Group:		Communications
 URL:		http://www.wirlab.net/kphone/index.html
 BuildRequires:	autoconf2.1
