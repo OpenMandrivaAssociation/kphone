@@ -63,35 +63,21 @@ Internet. It also supports Presence and Instant Messaging.
 autoconf
 
 %build
-# This will be outside the build root and thus ignored.
-# We don't want the .desktop file anyway
-kde_appsdir="%{_applnkdir}"; export kde_appsdir
-kde_icondir="%{_pixmapsdir}"; export kde_icondir
-
-QTDIR=%qtdir
-export LD_LIBRARY_PATH=$QTLIB:$LD_LIBRARY_PATH
-
-# Update config.{sub,guess} to recognize amd64-*
-%{?__cputoolize: %{__cputoolize}}
-
-%configure \
+%configure2_5x \
         --enable-shared \
         --with-gnu-ld \
         --with-pic \
         --enable-mt \
         --disable-rpath
-
-# crashes build - from copied spec file, not verified: LJB
-#	--enable-final \
 %make
 
 %install
-export PATH=$QTLIB/bin:$PATH
 rm -rf $RPM_BUILD_ROOT
 
 %makeinstall_std
 
 # Don't want to patch the Makefile
+mkdir -p %buildroot{%_iconsdir,%_liconsdir,%_miconsdir}
 cp icons/large-kphone.png %{buildroot}%{_liconsdir}/%{iconname}
 cp icons/lo-kphone.png %{buildroot}%{_iconsdir}/%{iconname}
 cp icons/mini-kphone.png %{buildroot}%{_miconsdir}/%{iconname}
@@ -106,29 +92,26 @@ Exec=kphone
 Icon=%{name}
 Terminal=false
 Type=Application
-Categories=X-MandrivaLinux-Internet-VideoConference;
+Categories=Telephony;Network;Qt;KDE;
 EOF
 
 
 %clean
 rm -rf $RPM_BUILD_ROOT
 
-%post -p /usr/bin/update-menus
-%postun -p /usr/bin/update-menus
+%post
+%update_menus
+
+%postun
+%clean_menus
 
 %files
+%doc CHANGES README
 %defattr(644,root,root,755)
 %attr(755,root,root) %{_bindir}/kphone
-%{_datadir}/apps/kphone/icons/*.png
+%_datadir/applications/*
+%_datadir/apps/kphone
+%_datadir/kphone
 %_iconsdir/%iconname
 %_liconsdir/%iconname
 %_miconsdir/%iconname  
-%_datadir/applications/*
-
-%dir %_datadir/kphone/translations/
-%_datadir/kphone/translations/*.qm
-		 
-
-%doc CHANGES COPYING INSTALL README
-
-
