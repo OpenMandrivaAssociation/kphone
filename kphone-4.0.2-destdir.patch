@@ -1,0 +1,38 @@
+diff -ru kphone.orig/icons/Makefile.in kphone-4.0.2/icons/Makefile.in
+--- kphone.orig/icons/Makefile.in	2004-04-01 05:54:32.000000000 -0800
++++ kphone-4.0.2/icons/Makefile.in	2004-06-14 14:56:31.394944538 -0700
+@@ -4,12 +4,12 @@
+ ICON_DIR=$(SHAREDIR)/icons
+ 
+ install:
+-	install --mode=0755 --directory $(ICON_DIR)
++	install --mode=0755 --directory $(DESTDIR)$(ICON_DIR)
+ 	for T in *.png; do \
+-		install --mode=0644 $$T $(ICON_DIR); \
++		install --mode=0644 $$T $(DESTDIR)$(ICON_DIR); \
+ 	done
+ 
+ uninstall:
+-	rm -r $(ICON_DIR)
+-	rm -r $(SHAREDIR)
++	rm -r $(DESTDIR)$(ICON_DIR)
++	rm -r $(DESTDIR)$(SHAREDIR)
+ 
+diff -ru kphone.orig/kphone/Makefile.in kphone-4.0.2/kphone/Makefile.in
+--- kphone.orig/kphone/Makefile.in	2004-04-01 05:54:32.000000000 -0800
++++ kphone-4.0.2/kphone/Makefile.in	2004-06-14 14:57:01.093559824 -0700
+@@ -49,11 +49,11 @@
+ all:	kphone
+ 
+ install:	all
+-	install --mode=0755 --directory $(BIN_DIR)
+-	install --strip kphone $(BIN_DIR)
++	install --mode=0755 --directory $(DESTDIR)$(BIN_DIR)
++	install --strip kphone $(DESTDIR)$(BIN_DIR)
+ 
+ uninstall:
+-	rm -f $(BIN_DIR)/kphone 
++	rm -f $(DESTDIR)$(BIN_DIR)/kphone 
+ 
+ clean:
+ 	rm -f kphone *.o *.a *~ *.moc.cpp *.bak core

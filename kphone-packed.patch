@@ -1,0 +1,11 @@
+--- kphone/kphone/rtpdataheader.h.packed	2005-04-18 09:04:40.000000000 -0400
++++ kphone/kphone/rtpdataheader.h	2005-08-23 08:58:11.000000000 -0400
+@@ -11,7 +11,7 @@ typedef unsigned short u_int16;
+ #define RTP_LITTLE_ENDIAN 1
+ 
+ //  RTP data header
+-typedef __attribute__ ((__packed__)) struct {
++typedef struct __attribute__ ((__packed__)) {
+ #if RTP_BIG_ENDIAN
+ 	unsigned int version:2;         // protocol version
+ 	unsigned int p:1;               // padding flag

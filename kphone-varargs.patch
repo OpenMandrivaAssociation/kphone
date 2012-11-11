@@ -1,0 +1,11 @@
+--- kphone/kphone/callaudio.cpp.varargs	2005-06-21 07:14:49.000000000 -0400
++++ kphone/kphone/callaudio.cpp	2005-08-23 08:56:04.000000000 -0400
+@@ -233,7 +233,7 @@ void CallAudio::audioIn( void )
+ 				QString::number( local.getVideoPort() );
+ 			printf( "CallAudio: execlp( %s, %s, %s, 0)\n",
+ 				videoSW.latin1(), SW.latin1(), videoSWParam.latin1() );
+-			execlp( videoSW.latin1(), SW.latin1(), videoSWParam.latin1(), 0 );
++			execlp( videoSW.latin1(), SW.latin1(), videoSWParam.latin1(), (char *)NULL );
+ 			printf( tr("error executing ") + videoSW + "\n" );
+ 			exit(1);
+ 		}

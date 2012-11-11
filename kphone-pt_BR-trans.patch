@@ -1,0 +1,1361 @@
+--- kphone/po/kphone_pt_BR.ts.pt_BR	2005-04-22 09:47:16.000000000 +0200
++++ kphone/po/kphone_pt_BR.ts	2005-10-03 16:06:53.000000000 +0200
+@@ -3,7 +3,7 @@
+     <name>AudioControl</name>
+     <message>
+         <source>Audio Properties</source>
+-        <translation>Propriedades do Audio</translation>
++        <translation>Propriedades de Audio</translation>
+     </message>
+     <message>
+         <source>OSS Device Mode</source>
+@@ -31,15 +31,15 @@
+     </message>
+     <message>
+         <source>G711u</source>
+-        <translation></translation>
++        <translation>G711u</translation>
+     </message>
+     <message>
+         <source>GSM</source>
+-        <translation></translation>
++        <translation>GSM</translation>
+     </message>
+     <message>
+         <source>iLBC</source>
+-        <translation></translation>
++        <translation>iLBC</translation>
+     </message>
+     <message>
+         <source>Size of Payload</source>
+@@ -47,15 +47,15 @@
+     </message>
+     <message>
+         <source>80 (10 ms Sample)</source>
+-        <translation></translation>
++        <translation>80 (10 ms Amostra)</translation>
+     </message>
+     <message>
+         <source>160 (20 ms Sample)</source>
+-        <translation></translation>
++        <translation>160 (20 ms Amostra)</translation>
+     </message>
+     <message>
+         <source>Ringing tone  (system bell)</source>
+-        <translation>Tom de chamada(Campainha do sistema)</translation>
++        <translation>Tom de chamada (Campainha do sistema)</translation>
+     </message>
+     <message>
+         <source>Don&apos;t use ringing tone</source>
+@@ -67,7 +67,7 @@
+     </message>
+     <message>
+         <source>ok button</source>
+-        <translation></translation>
++        <translation>Botão OK</translation>
+     </message>
+     <message>
+         <source>OK</source>
+@@ -75,7 +75,7 @@
+     </message>
+     <message>
+         <source>cancel button</source>
+-        <translation>Cancelar botão</translation>
++        <translation>Botão Cancelar</translation>
+     </message>
+     <message>
+         <source>Cancel</source>
+@@ -86,368 +86,370 @@
+     <name>CallAudio</name>
+     <message>
+         <source>CallAudio: SendToRemote called but we don&apos;t have a valid session description yet</source>
+-        <translation type="unfinished"></translation>
++        <translation>CallAudio: Chamada enviada mas nós não temos uma descrição de sessão válida ainda</translation>
+     </message>
+     <message>
+         <source>CallAudio: Remote is currently putting us on hold, waiting patiently</source>
+-        <translation type="unfinished"></translation>
++        <translation>CallAudio: Máquina remota está nos colocando em espera, aguardando pacientemente</translation>
+     </message>
+     <message>
+         <source>CallAudio: Sending to remote site %s:%d</source>
+-        <translation type="unfinished"></translation>
++        <translation>CallAudio: Enviando para máquina remota %s:%d</translation>
+     </message>
+     <message>
+         <source>CallAudio: OSS device already open (readwrite)</source>
+-        <translation type="unfinished"></translation>
++        <translation>CallAudio: Dispositivo OSS já está aberto (eitura/escrita)</translation>
+     </message>
+     <message>
+         <source>** audioIn: openDevice Failed.</source>
+-        <translation type="unfinished"></translation>
++        <translation>** audioIn: Tentativa de abrir dispositivo falhou.</translation>
+     </message>
+     <message>
+         <source>CallAudio: Opening OSS device %s for Input</source>
+-        <translation type="unfinished"></translation>
++        <translation>CallAudio: Abrindo dispositivo OSS %s para entrada</translation>
+     </message>
+     <message>
+         <source>CallAudio: Creating OSS-&gt;RTP Diverter</source>
+-        <translation type="unfinished"></translation>
++        <translation>CallAudio: Criando OSS-&gt;RTP Diverter</translation>
+     </message>
+     <message>
+         <source>CallAudio: Opening SW for video input and output</source>
+-        <translation type="unfinished"></translation>
++        <translation>CallAudio: Abrindo aplicativo para entrada e saída de video</translation>
+     </message>
+     <message>
+         <source>CallAudio: listening for incomming RTP</source>
+-        <translation type="unfinished"></translation>
++        <translation>CallAudio: aguardando por RTP enviado</translation>
+     </message>
+     <message>
+         <source>CallAudio: Opening OSS device %s for Input and Output</source>
+-        <translation type="unfinished"></translation>
++        <translation>CallAudio: Abrindo dispositivo OSS %s para entrada e saída</translation>
+     </message>
+     <message>
+         <source>** audioOut: openDevice Failed.</source>
+-        <translation type="unfinished"></translation>
++        <translation>** audioIn: Tentativa de abrir dispositivo falhou.</translation>
+     </message>
+     <message>
+         <source>CallAudio: Opening OSS device %s for Output</source>
+-        <translation type="unfinished"></translation>
++        <translation>allAudio: Abrindo dispositivo OSS %s para Saída</translation>
+     </message>
+ </context>
+ <context>
+     <name>ContactParser</name>
+     <message>
+         <source>description</source>
+-        <translation type="unfinished"></translation>
++        <translation>descrição</translation>
+     </message>
+     <message>
+         <source>uri</source>
+-        <translation type="unfinished"></translation>
++        <translation>uri</translation>
+     </message>
+     <message>
+         <source>contact</source>
+-        <translation type="unfinished"></translation>
++        <translation>contato</translation>
+     </message>
+ </context>
+ <context>
+     <name>ContactsListView</name>
+     <message>
+         <source>Status</source>
+-        <translation type="unfinished"></translation>
++        <translation>Status</translation>
+     </message>
+     <message>
+         <source>Contact</source>
+-        <translation type="unfinished"></translation>
++        <translation>Contato</translation>
+     </message>
+ </context>
+ <context>
+     <name>DspAudioIn</name>
+     <message>
+         <source>DspAudioIn: Broken pipe</source>
+-        <translation type="unfinished"></translation>
++        <translation>DspAudioIn: Queda na conexão</translation>
+     </message>
+     <message>
+         <source>DspAudioIn: UDP-failure(%d)</source>
+-        <translation type="unfinished"></translation>
++        <translation>DspAudioIn: Falha-UDP(%d)</translation>
+     </message>
+ </context>
+ <context>
+     <name>DspAudioOut</name>
+     <message>
+         <source>DspAudio: Broken pipe</source>
+-        <translation type="unfinished"></translation>
++        <translation>DspAudioIn: Queda na conexão</translation>
+     </message>
+ </context>
+ <context>
+     <name>DspOutOss</name>
+     <message>
+         <source>Device Already Open</source>
+-        <translation type="unfinished"></translation>
++        <translation>Dispositivo já está Aberto</translation>
+     </message>
+     <message>
+         <source>Open Failed</source>
+-        <translation type="unfinished"></translation>
++        <translation>Falha ao Abrir</translation>
+     </message>
+     <message>
+         <source>Format not supported</source>
+-        <translation type="unfinished"></translation>
++        <translation>Formato não suportado</translation>
+     </message>
+     <message>
+         <source>Unsupported Number of Channels</source>
+-        <translation type="unfinished"></translation>
++        <translation>Número de canais não suportado</translation>
+     </message>
+     <message>
+         <source>WARNING: nonmonophonic driver, forced into stereo mode (experimental)</source>
+-        <translation type="unfinished"></translation>
++        <translation>CUIDADO: driver nonmonophonic, forçado uso do modo estéreo (experimental)</translation>
+     </message>
+     <message>
+         <source>WARNING: driver rounded %d Hz request to %d Hz, off by %f%%</source>
+-        <translation type="unfinished"></translation>
++        <translation>CUIDADO: driver com %d Hz requer mudança para %d Hz, feita por %f%%</translation>
+     </message>
+     <message>
+         <source>Device Not Open</source>
+-        <translation type="unfinished"></translation>
++        <translation>Dispositivo não está aberto</translation>
+     </message>
+     <message>
+         <source>warning: asked microphone for %d got %d</source>
+-        <translation type="unfinished"></translation>
++        <translation>cuidado: pedido de microfone para %d recebeu %d</translation>
+     </message>
+ </context>
+ <context>
+     <name>DspOutRtp</name>
+     <message>
+         <source>DspOutRtp:: Can&apos;t create socket</source>
+-        <translation type="unfinished"></translation>
++        <translation>DspOutRtp:: Impossível criar socket</translation>
+     </message>
+     <message>
+         <source>DspOutRtp::Hostname lookup failed</source>
+-        <translation type="unfinished"></translation>
++        <translation>DspOutRtp:: Busca pelo nome da máquina falhou</translation>
+     </message>
+     <message>
+         <source>SipClient: Receiving message...</source>
+-        <translation type="unfinished"></translation>
++        <translation>SipClient: Recebendo menssagem...</translation>
+     </message>
+     <message>
+         <source>SipClient: STUN response for RTP</source>
+-        <translation type="unfinished"></translation>
++        <translation>SipClient: STUN responde para RTP</translation>
+     </message>
+ </context>
+ <context>
+     <name>KCallTransfer</name>
+     <message>
+         <source>Transfer to URI:</source>
+-        <translation type="unfinished"></translation>
++        <translation>Transferência para URI:</translation>
+     </message>
+     <message>
+         <source>help button</source>
+-        <translation type="unfinished"></translation>
++        <translation>Botão de Ajuda</translation>
+     </message>
+     <message>
+         <source>&amp;help...</source>
+-        <translation type="unfinished"></translation>
++        <translation>&amp;Ajuda</translation>
+     </message>
+     <message>
+         <source>ok button</source>
+-        <translation type="unfinished"></translation>
++        <translation>Botão Ok</translation>
+     </message>
+     <message>
+         <source>OK</source>
+-        <translation type="unfinished"></translation>
++        <translation>OK</translation>
+     </message>
+     <message>
+         <source>cancel button</source>
+-        <translation type="unfinished"></translation>
++        <translation>Botão Cancelar</translation>
+     </message>
+     <message>
+         <source>Cancel</source>
+-        <translation type="unfinished"></translation>
++        <translation>Cancelar</translation>
+     </message>
+ </context>
+ <context>
+     <name>KCallWidget</name>
+     <message>
+         <source>Remote: </source>
+-        <translation type="unfinished"></translation>
++        <translation>Máquina Remota:</translation>
+     </message>
+     <message>
+         <source>  Remote:  </source>
+-        <translation type="unfinished"></translation>
++        <translation>  Máquina Remota:  </translation>
+     </message>
+     <message>
+         <source>Status: </source>
+-        <translation type="unfinished"></translation>
++        <translation>Status: </translation>
+     </message>
+     <message>
+         <source>Audio: </source>
+-        <translation type="unfinished"></translation>
++        <translation>Audio: </translation>
+     </message>
+     <message>
+         <source>Dial</source>
+-        <translation type="unfinished"></translation>
++        <translation>Discar</translation>
+     </message>
+     <message>
+         <source>Hangup</source>
+-        <translation type="unfinished"></translation>
++        <translation>Desligar</translation>
+     </message>
+     <message>
+         <source>Hold</source>
+-        <translation type="unfinished"></translation>
++        <translation>Em Espera</translation>
+     </message>
+     <message>
+         <source>Transfer</source>
+-        <translation type="unfinished"></translation>
++        <translation>Transferir</translation>
+     </message>
+     <message>
+         <source>DTMF</source>
+-        <translation type="unfinished"></translation>
++        <translation>DTMF</translation>
+     </message>
+     <message>
+         <source>Hide</source>
+-        <translation type="unfinished"></translation>
++        <translation>Esconder</translation>
+     </message>
+     <message>
+         <source>KCallWidget: Switching calls...</source>
+-        <translation type="unfinished"></translation>
++        <translation>KCallWidget: Alternando chamadas...</translation>
+     </message>
+     <message>
+         <source>Call: </source>
+-        <translation type="unfinished"></translation>
++        <translation>Chamadas: </translation>
+     </message>
+     <message>
+         <source>Incoming Video Call: </source>
+-        <translation type="unfinished"></translation>
++        <translation>Recebendo Chamada de Video:</translation>
+     </message>
+     <message>
+         <source>Incoming Call: </source>
+-        <translation type="unfinished"></translation>
++        <translation>Recebendo Chamada: </translation>
+     </message>
+     <message>
+         <source>Accept</source>
+-        <translation type="unfinished"></translation>
++        <translation>Aceitar</translation>
+     </message>
+     <message>
+         <source>Reject</source>
+-        <translation type="unfinished"></translation>
++        <translation>Rejeitar</translation>
+     </message>
+     <message>
+         <source>Outgoing Video Call: </source>
+-        <translation type="unfinished"></translation>
++        <translation>Enviando Chamada de Video: </translation>
+     </message>
+     <message>
+         <source>Outgoing Call: </source>
+-        <translation type="unfinished"></translation>
++        <translation>Enviando Chamada: </translation>
+     </message>
+     <message>
+         <source>Error: No Destination</source>
+-        <translation type="unfinished"></translation>
++        <translation>Erro: Sem Destinatário</translation>
+     </message>
+     <message>
+         <source>You must specify someone to call.</source>
+-        <translation type="unfinished"></translation>
++        <translation>Você deve especificar alguém para ligar.</translation>
+     </message>
+     <message>
+         <source>Close any program which might be using soundcard 
+ and then retry dial.</source>
+-        <translation type="unfinished"></translation>
++        <translation>Encerre todos os programas que podem estar usando a placa de som
++e tente discar novamente.</translation>
+     </message>
+     <message>
+         <source>KCallAudio: Broken output pipe, disconnecting unpolitely</source>
+-        <translation type="unfinished"></translation>
++        <translation>KCallAudio: Queda da conexão de saída, desconectando abruptamente</translation>
+     </message>
+     <message>
+         <source>Unhold</source>
+-        <translation type="unfinished"></translation>
++        <translation>Retirando da espera</translation>
+     </message>
+     <message>
+         <source>KCallWidget: Handling redirect...</source>
+-        <translation type="unfinished"></translation>
++        <translation>KCallWidget: Gerenciando redirecionamento...</translation>
+     </message>
+     <message>
+         <source>Redirect</source>
+-        <translation type="unfinished"></translation>
++        <translation>Redirecionamento</translation>
+     </message>
+     <message>
+         <source>Call redirected to: </source>
+-        <translation type="unfinished"></translation>
++        <translation>Chamada redirecionada para: </translation>
+     </message>
+     <message>
+         <source>Do you want to proceed ? </source>
+-        <translation type="unfinished"></translation>
++        <translation>Você deseja continuar? </translation>
+     </message>
+     <message>
+         <source>KCallWidget: Starting force disconnect...</source>
+-        <translation type="unfinished"></translation>
++        <translation>KCallWidget: Forçando a desconexão...</translation>
+     </message>
+     <message>
+         <source>Attached [holding]</source>
+-        <translation type="unfinished"></translation>
++        <translation>Anexado [em espera]</translation>
+     </message>
+     <message>
+         <source>Attached [active]</source>
+-        <translation type="unfinished"></translation>
++        <translation>Anexado [ativo]</translation>
+     </message>
+     <message>
+         <source>Unattached</source>
+-        <translation type="unfinished"></translation>
++        <translation>Desanexado</translation>
+     </message>
+     <message>
+         <source>Accept Call</source>
+-        <translation type="unfinished"></translation>
++        <translation>Aceitar Chaamda</translation>
+     </message>
+     <message>
+         <source>Close any program which might be using soundcard 
+ and then retry accepting call.</source>
+-        <translation></translation>
++        <translation>Feche qualquer programa que possa estar usando a
++placa de som e tente aceitar a chamada novamente.</translation>
+     </message>
+     <message>
+         <source>Accepted codec not found.</source>
+-        <translation type="unfinished"></translation>
++        <translation>Codec aceito não encontrado.</translation>
+     </message>
+ </context>
+ <context>
+     <name>KInstantMessageWidget</name>
+     <message>
+         <source> Message - KPhone</source>
+-        <translation type="unfinished"></translation>
++        <translation>Menssagem - KPhone</translation>
+     </message>
+     <message>
+         <source>Remote: </source>
+-        <translation type="unfinished"></translation>
++        <translation>Máquina Remota: </translation>
+     </message>
+     <message>
+         <source>  Remote:  </source>
+-        <translation type="unfinished"></translation>
++        <translation>  Máquina Remota:  </translation>
+     </message>
+     <message>
+         <source>Status: </source>
+-        <translation type="unfinished"></translation>
++        <translation>Status: </translation>
+     </message>
+     <message>
+         <source>Message: </source>
+-        <translation type="unfinished"></translation>
++        <translation>Menssagem: </translation>
+     </message>
+     <message>
+         <source>Send</source>
+-        <translation type="unfinished"></translation>
++        <translation>Enviar</translation>
+     </message>
+     <message>
+         <source>Hide</source>
+-        <translation type="unfinished"></translation>
++        <translation>Esconder</translation>
+     </message>
+     <message>
+         <source>Message received from </source>
+-        <translation type="unfinished"></translation>
++        <translation>Menssagem recebida de </translation>
+     </message>
+     <message>
+         <source>Error: No Destination</source>
+-        <translation type="unfinished"></translation>
++        <translation>Erro: Sem Destinatário</translation>
+     </message>
+     <message>
+         <source>You must specify someone to send message.</source>
+-        <translation type="unfinished"></translation>
++        <translation>Você deve especificar alguém para enviar a menssagem.</translation>
+     </message>
+     <message>
+         <source>Message sent to </source>
+-        <translation type="unfinished"></translation>
++        <translation>Menssagem enviada para </translation>
+     </message>
+ </context>
+ <context>
+@@ -474,7 +476,7 @@
+     </message>
+     <message>
+         <source>SIP Preferences...</source>
+-        <translation>Preferências do SIP...</translation>
++        <translation>Preferênciasdo SIP...</translation>
+     </message>
+     <message>
+         <source>Audio Preferences...</source>
+@@ -490,7 +492,7 @@
+     </message>
+     <message>
+         <source>Tray Icon</source>
+-        <translation type="unfinished"></translation>
++        <translation>Ícone</translation>
+     </message>
+     <message>
+         <source>&amp;Preferences</source>
+@@ -502,7 +504,7 @@
+     </message>
+     <message>
+         <source>About KPhone</source>
+-        <translation>Sobre KPhone</translation>
++        <translation>Sobre o KPhone</translation>
+     </message>
+     <message>
+         <source>&amp;Help</source>
+@@ -532,141 +534,156 @@
+ contacts you can return to the main UI by clicking Hide. All your selected contacts should now appear there. Making calls and 
+ sending instant messages to your contacts is easy with the RMB. Just click and select the function which you&apos;d like to initiate.
+ </source>
+-        <translation type="unfinished"></translation>
++        <translation>Quando iniciar o KPhone pela primeira vez, você deve entrar as informações sobre a sua identidade na janela que aparece.
++As informações requeridas são &apos;Nome Completo&apos;, &apos;Usuário parte do SIP URL&apos; e &apos;Máquina parte do SIP URL&apos;.
++Nota para os usuários do KPhone 3.xx: copie o arquivo &apos;~/.kde/share/config/kphonerc&apos; para o diretório &apos;~/.qt&apos;.
++
++Se você tem um NAPTR/SRV habilitado no servidor-DNS você pode deixar os campos  &apos;Outbound Proxy&apos; and &apos;Authentication Username&apos; em branco, pois o Kphone irá procurar automaticamente por informações do servidor através da &apos;Máquina parte do SIP URL&apos; e perguntará o nome do usuário e a senha.
++
++Marque a opção auto registrar se você deseja que o KPhone registre a sua identidade automaticamente quando a aplicação funcionar.
++Se você deseja usar múltiplas identidades, inicie o Kphone com a opção &apos;-u&apos; e o nome do usuário selecionado.
++Por exemplo:  &apos;kphone -u jsmith&apos;.
++
++Se você estiver atrás de um dispositivo NAT (Network Address Translation), você deve ir em Preferências -&gt; Preferênicas do SIP -&gt; Socket e marcar a opção &apos;Usar Servidor STUN&apos;
++
++O botão da direita do seu mouse é seu melhor amigo no KPhone&apos;s. Clicando com o botão direito do mouse (RMB) na janela principal você abre um meni que iclui todas as funções principais do KPhone. Você deve editar o Catálogo de telefones e colocar todos os seus contatos favoritos lá. Isso não é obrigatório mas melhora a sua eficiência com KPhone.
++
++Quando estiver adicionando contatos ao seu Catálogo de Telefones, simplesmente clique em Adicionar e entre o nome da pessoa, a identidade SIP e uma descrição opcional. Se você quer que seus contatos sejam mostrados na janela principal, apenas marque a opção &apos;Adicionar Identidade ...&apos;. Após editar seus contatos você pode retornar a janela principal clicando Esconder. Todos os seus contatos selecionados devem parecer agora. Fazer chamadas e enviar menssagens é fácil com o botão direito do mouse. Apenas clique e selecione a função que você desejar.
++</translation>
+     </message>
+     <message>
+         <source>is a &apos;Voice Over Internet&apos; phone</source>
+-        <translation type="unfinished"></translation>
++        <translation>é um telefone baseado em &apos;Voz Sobre Internet&apos;</translation>
+     </message>
+     <message>
+         <source>Copyright (c) 2000 Billy Biggs</source>
+-        <translation type="unfinished"></translation>
++        <translation>Copyright (c) 2000 Billy Biggs</translation>
+     </message>
+     <message>
+         <source>Copyright (c) 2004 Wirlab</source>
+-        <translation type="unfinished"></translation>
++        <translation>Copyright (c) 2004 Wirlab</translation>
+     </message>
+     <message>
+         <source>KPhone is released under the GPL</source>
+-        <translation type="unfinished"></translation>
++        <translation>KPhone é lançado sobre a GPL</translation>
+     </message>
+     <message>
+         <source>For more information, see</source>
+-        <translation type="unfinished"></translation>
++        <translation>Para mais informações, veja</translation>
+     </message>
+ </context>
+ <context>
+     <name>KPhoneView</name>
+     <message>
+         <source>Set Identity</source>
+-        <translation type="unfinished"></translation>
++        <translation>Definir Identidade</translation>
+     </message>
+     <message>
+         <source>Send Message</source>
+-        <translation type="unfinished"></translation>
++        <translation>Enviar Menssagem</translation>
+     </message>
+     <message>
+         <source>Call</source>
+-        <translation type="unfinished"></translation>
++        <translation>Chamada</translation>
+     </message>
+     <message>
+         <source>Video Call</source>
+-        <translation type="unfinished"></translation>
++        <translation>Chamada de Video</translation>
+     </message>
+     <message>
+         <source>Phone Book</source>
+-        <translation type="unfinished"></translation>
++        <translation>Catálogo de Telefones</translation>
+     </message>
+     <message>
+         <source>Online</source>
+-        <translation type="unfinished"></translation>
++        <translation>Online</translation>
+     </message>
+     <message>
+         <source>Busy</source>
+-        <translation type="unfinished"></translation>
++        <translation>Ocupado</translation>
+     </message>
+     <message>
+         <source>Be Right Back</source>
+-        <translation type="unfinished"></translation>
++        <translation>Volto Logo</translation>
+     </message>
+     <message>
+         <source>Away</source>
+-        <translation type="unfinished"></translation>
++        <translation>Ausente</translation>
+     </message>
+     <message>
+         <source>On The Phone</source>
+-        <translation type="unfinished"></translation>
++        <translation>No Telefone</translation>
+     </message>
+     <message>
+         <source>Out To Lunch</source>
+-        <translation type="unfinished"></translation>
++        <translation>Em horário de Almoço</translation>
+     </message>
+     <message>
+         <source>KPhoneView: Incoming Instant Message</source>
+-        <translation type="unfinished"></translation>
++        <translation>KPhoneView: Recebendo Menssagem Instântanea</translation>
+     </message>
+     <message>
+         <source>KPhone</source>
+-        <translation type="unfinished"></translation>
++        <translation>KPhone</translation>
+     </message>
+     <message>
+         <source>Subscribe message from uri:</source>
+-        <translation type="unfinished"></translation>
++        <translation>Assinar menssagem para uri:</translation>
+     </message>
+     <message>
+         <source>Do you want to accept and create a contact ?</source>
+-        <translation type="unfinished"></translation>
++        <translation>Você deseja aceitar e criar o contato ?</translation>
+     </message>
+     <message>
+         <source>Accept</source>
+-        <translation type="unfinished"></translation>
++        <translation>Aceitar</translation>
+     </message>
+     <message>
+         <source>Reject permanently</source>
+-        <translation type="unfinished"></translation>
++        <translation>Rejeitar permanentemente</translation>
+     </message>
+     <message>
+         <source>Reject this time</source>
+-        <translation type="unfinished"></translation>
++        <translation>Rejeitar desta vez</translation>
+     </message>
+     <message>
+         <source>Incoming call</source>
+-        <translation type="unfinished"></translation>
++        <translation>Recebendo chamada</translation>
+     </message>
+     <message>
+         <source>Set First Identity.</source>
+-        <translation type="unfinished"></translation>
++        <translation>Configurar Identidade Principal</translation>
+     </message>
+     <message>
+         <source>online</source>
+-        <translation type="unfinished"></translation>
++        <translation>online</translation>
+     </message>
+     <message>
+         <source>busy</source>
+-        <translation type="unfinished"></translation>
++        <translation>ocupado</translation>
+     </message>
+     <message>
+         <source>berightback</source>
+-        <translation type="unfinished"></translation>
++        <translation>volto logo</translation>
+     </message>
+     <message>
+         <source>away</source>
+-        <translation type="unfinished"></translation>
++        <translation>ausente</translation>
+     </message>
+     <message>
+         <source>onthephone</source>
+-        <translation type="unfinished"></translation>
++        <translation>no telefone</translation>
+     </message>
+     <message>
+         <source>outtolunch</source>
+-        <translation type="unfinished"></translation>
++        <translation>em horário de almoço</translation>
+     </message>
+ </context>
+ <context>
+     <name>KSipAuthenticationRequest</name>
+     <message>
+         <source>SipUri = </source>
+-        <translation>SIP URI = </translation>
++        <translation>SipUri = </translation>
+     </message>
+     <message>
+         <source>Server = </source>
+@@ -682,7 +699,7 @@
+     </message>
+     <message>
+         <source>ok button</source>
+-        <translation>botão OK</translation>
++        <translation>Botão OK</translation>
+     </message>
+     <message>
+         <source>OK</source>
+@@ -690,7 +707,7 @@
+     </message>
+     <message>
+         <source>cancel button</source>
+-        <translation>botão cancelar</translation>
++        <translation>Botão Cancelar</translation>
+     </message>
+     <message>
+         <source>Cancel</source>
+@@ -717,15 +734,15 @@
+     </message>
+     <message>
+         <source>Outbound Proxy (optional):</source>
+-        <translation type="unfinished"></translation>
++        <translation>Proxy (opcional):</translation>
+     </message>
+     <message>
+         <source>Authentication Username (optional):</source>
+-        <translation type="unfinished"></translation>
++        <translation>Nome de usuário para autenticação (opcional)</translation>
+     </message>
+     <message>
+         <source>q-value between 0.0-1.0 (optional):</source>
+-        <translation type="unfinished"></translation>
++        <translation>q- valor entre 0.0-1.0 (opcional)</translation>
+     </message>
+     <message>
+         <source>Auto Register</source>
+@@ -733,11 +750,11 @@
+     </message>
+     <message>
+         <source>Register</source>
+-        <translation>Registro</translation>
++        <translation>Registrar</translation>
+     </message>
+     <message>
+         <source>help button</source>
+-        <translation>botão ajuda</translation>
++        <translation>Botão Ajuda</translation>
+     </message>
+     <message>
+         <source>&amp;help...</source>
+@@ -745,7 +762,7 @@
+     </message>
+     <message>
+         <source>ok button</source>
+-        <translation>botão OK</translation>
++        <translation>Botão OK</translation>
+     </message>
+     <message>
+         <source>OK</source>
+@@ -753,7 +770,7 @@
+     </message>
+     <message>
+         <source>cancel button</source>
+-        <translation>botão cancelar</translation>
++        <translation>Botão Cancelar</translation>
+     </message>
+     <message>
+         <source>Cancel</source>
+@@ -776,224 +793,224 @@
+     <name>KSipOptions</name>
+     <message>
+         <source>URI to Request Options For:</source>
+-        <translation type="unfinished"></translation>
++        <translation>URI para buscar Opções de:</translation>
+     </message>
+     <message>
+         <source>Results:</source>
+-        <translation type="unfinished"></translation>
++        <translation>Resultados:</translation>
+     </message>
+     <message>
+         <source>Make Query</source>
+-        <translation type="unfinished"></translation>
++        <translation>Pesquisar</translation>
+     </message>
+ </context>
+ <context>
+     <name>KSipPreferences</name>
+     <message>
+         <source>Global SIP Preferences</source>
+-        <translation type="unfinished"></translation>
++        <translation>Preferências Globais SIP</translation>
+     </message>
+     <message>
+         <source>Settings</source>
+-        <translation type="unfinished"></translation>
++        <translation>Configurações</translation>
+     </message>
+     <message>
+         <source>Hide Via</source>
+-        <translation type="unfinished"></translation>
++        <translation>Esconder Via</translation>
+     </message>
+     <message>
+         <source>Don&apos;t Hide</source>
+-        <translation type="unfinished"></translation>
++        <translation>Não Esconder</translation>
+     </message>
+     <message>
+         <source>Request Next Hop</source>
+-        <translation type="unfinished"></translation>
++        <translation>Buscar Próximo Hop</translation>
+     </message>
+     <message>
+         <source>Request Full Route</source>
+-        <translation type="unfinished"></translation>
++        <translation>Buscar Rota Completa</translation>
+     </message>
+     <message>
+         <source>Max Forwards</source>
+-        <translation type="unfinished"></translation>
++        <translation>Máximo de Encaminhamentos</translation>
+     </message>
+     <message>
+         <source>XML-File for Phone Book:</source>
+-        <translation type="unfinished"></translation>
++        <translation>Arquivo XML para Catálogo de Telefones:</translation>
+     </message>
+     <message>
+         <source>Expire Time of Registration (second):</source>
+-        <translation type="unfinished"></translation>
++        <translation>Tempo para Expirar o Registro (segundos):</translation>
+     </message>
+     <message>
+         <source>Expire Time of Presence Subscription (second):</source>
+-        <translation type="unfinished"></translation>
++        <translation>Tempo para Expirar a presente Inscrição (segundos):</translation>
+     </message>
+     <message>
+         <source>Socket Protocol (Kphone restart needed to apply change)</source>
+-        <translation type="unfinished"></translation>
++        <translation>Protocolo Socket (É necessário reiniciar o Kphone para aplicar as mudanças)</translation>
+     </message>
+     <message>
+         <source>UDP</source>
+-        <translation type="unfinished"></translation>
++        <translation>UDP</translation>
+     </message>
+     <message>
+         <source>TCP</source>
+-        <translation type="unfinished"></translation>
++        <translation>TCP</translation>
+     </message>
+     <message>
+         <source>Use STUN Server</source>
+-        <translation type="unfinished"></translation>
++        <translation>Usar Servidor STUN</translation>
+     </message>
+     <message>
+         <source>Yes</source>
+-        <translation type="unfinished"></translation>
++        <translation>Sim</translation>
+     </message>
+     <message>
+         <source>No</source>
+-        <translation type="unfinished"></translation>
++        <translation>Não</translation>
+     </message>
+     <message>
+         <source>Symmetric Signalling</source>
+-        <translation type="unfinished"></translation>
++        <translation>Sinais Simétricos</translation>
+     </message>
+     <message>
+         <source>Symmetric Media</source>
+-        <translation type="unfinished"></translation>
++        <translation>Meio Simétrico</translation>
+     </message>
+     <message>
+         <source>STUN Server (address:port):</source>
+-        <translation type="unfinished"></translation>
++        <translation>Servidor STUN (endereço:porta): </translation>
+     </message>
+     <message>
+         <source>Request Period for STUN Server (second):</source>
+-        <translation type="unfinished"></translation>
++        <translation>Tempo de Requisição para o Servidor STUN (segundos):</translation>
+     </message>
+     <message>
+         <source>Media Min Port:</source>
+-        <translation type="unfinished"></translation>
++        <translation>Porta mínima do Meio:</translation>
+     </message>
+     <message>
+         <source>Media Max Port:</source>
+-        <translation type="unfinished"></translation>
++        <translation>Porta Máxima do Meio:</translation>
+     </message>
+     <message>
+         <source>Call Preferences</source>
+-        <translation type="unfinished"></translation>
++        <translation>Preferências de Chamada</translation>
+     </message>
+     <message>
+         <source>Busy Message:</source>
+-        <translation type="unfinished"></translation>
++        <translation>Menssagem de Ocupado:</translation>
+     </message>
+     <message>
+         <source>Call Forwarding</source>
+-        <translation type="unfinished"></translation>
++        <translation>Encaminhamento de Chamada</translation>
+     </message>
+     <message>
+         <source>Inactive</source>
+-        <translation type="unfinished"></translation>
++        <translation>Inativo</translation>
+     </message>
+     <message>
+         <source>Active</source>
+-        <translation type="unfinished"></translation>
++        <translation>Ativo</translation>
+     </message>
+     <message>
+         <source>Forward to:</source>
+-        <translation type="unfinished"></translation>
++        <translation>Encaminhar para:</translation>
+     </message>
+     <message>
+         <source>Call Forward Message:</source>
+-        <translation type="unfinished"></translation>
++        <translation>Menssagem para Chamada Encaminhada:</translation>
+     </message>
+ </context>
+ <context>
+     <name>KSipRegistrations</name>
+     <message>
+         <source>off</source>
+-        <translation type="unfinished"></translation>
++        <translation>desligado</translation>
+     </message>
+     <message>
+         <source>Identity</source>
+-        <translation type="unfinished"></translation>
++        <translation>Identidade</translation>
+     </message>
+     <message>
+         <source>Restart Kphone to apply identity changes.</source>
+-        <translation type="unfinished"></translation>
++        <translation>Reiniciar Kphone para aplicar as mudanças na identidade.</translation>
+     </message>
+     <message>
+         <source>Inactive</source>
+-        <translation type="unfinished"></translation>
++        <translation>Inativo</translation>
+     </message>
+     <message>
+         <source>Trying...</source>
+-        <translation type="unfinished"></translation>
++        <translation>Tentando...</translation>
+     </message>
+     <message>
+         <source>Auth Required...</source>
+-        <translation type="unfinished"></translation>
++        <translation>Autenticação Requerida...</translation>
+     </message>
+     <message>
+         <source>Active</source>
+-        <translation type="unfinished"></translation>
++        <translation>Ativo</translation>
+     </message>
+     <message>
+         <source>Unregistering...</source>
+-        <translation type="unfinished"></translation>
++        <translation>Apagando registro...</translation>
+     </message>
+     <message>
+         <source>Reregistering...</source>
+-        <translation type="unfinished"></translation>
++        <translation>Registrando novamente...</translation>
+     </message>
+     <message>
+         <source>Digest Authentication Request</source>
+-        <translation type="unfinished"></translation>
++        <translation>Autenticação Requerida</translation>
+     </message>
+     <message>
+         <source>Basic Authentication Request</source>
+-        <translation type="unfinished"></translation>
++        <translation>Autenticação Básica Requerida</translation>
+     </message>
+     <message>
+         <source>Proxy Digest Authentication Request</source>
+-        <translation type="unfinished"></translation>
++        <translation>Autenticação por Proxy Requerida</translation>
+     </message>
+     <message>
+         <source>Proxy Basic Authentication Request</source>
+-        <translation type="unfinished"></translation>
++        <translation>Autenticação Básica Requerida</translation>
+     </message>
+ </context>
+ <context>
+     <name>KTestOptions</name>
+     <message>
+         <source>Address:</source>
+-        <translation type="unfinished"></translation>
++        <translation>Endereço:</translation>
+     </message>
+     <message>
+         <source>Port:</source>
+-        <translation type="unfinished"></translation>
++        <translation>Porta:</translation>
+     </message>
+     <message>
+         <source>Message:</source>
+-        <translation type="unfinished"></translation>
++        <translation>Menssagem:</translation>
+     </message>
+     <message>
+         <source>Clean</source>
+-        <translation type="unfinished"></translation>
++        <translation>Limpar</translation>
+     </message>
+     <message>
+         <source>File</source>
+-        <translation type="unfinished"></translation>
++        <translation>Arquivo</translation>
+     </message>
+     <message>
+         <source>Send</source>
+-        <translation type="unfinished"></translation>
++        <translation>Enviar</translation>
+     </message>
+     <message>
+         <source>Text files (*.txt)</source>
+-        <translation type="unfinished"></translation>
++        <translation>Arquivos texto (*.txt)</translation>
+     </message>
+     <message>
+         <source>open file dialogChoose a file</source>
+-        <translation type="unfinished"></translation>
++        <translation>abrir um arquivo dialogChoose</translation>
+     </message>
+ </context>
+ <context>
+@@ -1028,7 +1045,7 @@
+     </message>
+     <message>
+         <source>Select first item.</source>
+-        <translation type="unfinished"></translation>
++        <translation>Selecionar primeiro item.</translation>
+     </message>
+     <message>
+         <source>Are You Sure ?</source>
+@@ -1059,11 +1076,11 @@
+     </message>
+     <message>
+         <source>Add Identity to Contacts List</source>
+-        <translation>Adicionar identidade a lista de contatos</translation>
++        <translation>Adicionar identidade a Lista de Contatos</translation>
+     </message>
+     <message>
+         <source>ok button</source>
+-        <translation>botão ok</translation>
++        <translation>Botão ok</translation>
+     </message>
+     <message>
+         <source>OK</source>
+@@ -1071,7 +1088,7 @@
+     </message>
+     <message>
+         <source>cancel button</source>
+-        <translation>botão cancel</translation>
++        <translation>Botão Cancelar</translation>
+     </message>
+     <message>
+         <source>Cancel</source>
+@@ -1082,23 +1099,23 @@
+     <name>PhoneBookEditIdentity</name>
+     <message>
+         <source>Identity:</source>
+-        <translation type="unfinished"></translation>
++        <translation>Identidade</translation>
+     </message>
+     <message>
+         <source>Description:</source>
+-        <translation type="unfinished"></translation>
++        <translation>Descrição:</translation>
+     </message>
+     <message>
+         <source>Add Identity to Contacts List</source>
+-        <translation type="unfinished"></translation>
++        <translation>Adicionar Identidade a Lista de Contatos</translation>
+     </message>
+     <message>
+         <source>OK</source>
+-        <translation type="unfinished"></translation>
++        <translation>OK</translation>
+     </message>
+     <message>
+         <source>Cancel</source>
+-        <translation type="unfinished"></translation>
++        <translation>Cancelar</translation>
+     </message>
+ </context>
+ <context>
+@@ -1120,172 +1137,172 @@
+     <name>PhoneBookParser</name>
+     <message>
+         <source>Identity</source>
+-        <translation type="unfinished"></translation>
++        <translation>Identidade</translation>
+     </message>
+     <message>
+         <source>Contact</source>
+-        <translation type="unfinished"></translation>
++        <translation>Contato</translation>
+     </message>
+     <message>
+         <source>Description</source>
+-        <translation type="unfinished"></translation>
++        <translation>Descrição</translation>
+     </message>
+     <message>
+         <source>Permanently rejected contacts</source>
+-        <translation type="unfinished"></translation>
++        <translation>Contatos rejeitados permanetemente</translation>
+     </message>
+     <message>
+         <source>Call Register</source>
+-        <translation type="unfinished"></translation>
++        <translation>Registro de Chamadas</translation>
+     </message>
+     <message>
+         <source>Received calls</source>
+-        <translation type="unfinished"></translation>
++        <translation>Chamadas Recebidas</translation>
+     </message>
+     <message>
+         <source>Missed calls</source>
+-        <translation type="unfinished"></translation>
++        <translation>Chamadas Perdidas</translation>
+     </message>
+     <message>
+         <source>PhoneBook</source>
+-        <translation type="unfinished"></translation>
++        <translation>Catálogo de Telefones</translation>
+     </message>
+     <message>
+         <source>Name</source>
+-        <translation type="unfinished"></translation>
++        <translation>Nome</translation>
+     </message>
+     <message>
+         <source>description</source>
+-        <translation type="unfinished"></translation>
++        <translation>descrição</translation>
+     </message>
+     <message>
+         <source>contact</source>
+-        <translation type="unfinished"></translation>
++        <translation>contato</translation>
+     </message>
+ </context>
+ <context>
+     <name>SipCallMember</name>
+     <message>
+         <source>Response: </source>
+-        <translation></translation>
++        <translation>Resposta: </translation>
+     </message>
+     <message>
+         <source>Connected: </source>
+-        <translation></translation>
++        <translation>Conectado: </translation>
+     </message>
+     <message>
+         <source>Redirected: </source>
+-        <translation></translation>
++        <translation>Redirecionado: </translation>
+     </message>
+     <message>
+         <source>Call Failed: </source>
+-        <translation></translation>
++        <translation>Falha na Chamada:</translation>
+     </message>
+     <message>
+         <source>Disconnecting</source>
+-        <translation></translation>
++        <translation>Desconectando</translation>
+     </message>
+     <message>
+         <source>Transfering</source>
+-        <translation></translation>
++        <translation>Transferindo</translation>
+     </message>
+     <message>
+         <source>Querying options</source>
+-        <translation></translation>
++        <translation>Pesquisando opções</translation>
+     </message>
+     <message>
+         <source>Connected</source>
+-        <translation></translation>
++        <translation>Conectado</translation>
+     </message>
+     <message>
+         <source>Not Acceptable Here</source>
+-        <translation></translation>
++        <translation>Não Aceitável Aqui</translation>
+     </message>
+     <message>
+         <source>Rejecting call invitation</source>
+-        <translation></translation>
++        <translation>Rejeitando convite para chamada</translation>
+     </message>
+     <message>
+         <source>Invitation received</source>
+-        <translation></translation>
++        <translation>Convite recebido</translation>
+     </message>
+     <message>
+         <source>Session update requested</source>
+-        <translation></translation>
++        <translation>Atualização de sessão requerido</translation>
+     </message>
+     <message>
+         <source>Remote end disconnected</source>
+-        <translation></translation>
++        <translation>Chamada desconectada remotamente</translation>
+     </message>
+     <message>
+         <source>Refer</source>
+-        <translation></translation>
++        <translation>Referência</translation>
+     </message>
+     <message>
+         <source>Request cancelled</source>
+-        <translation></translation>
++        <translation>Requisição cancelada</translation>
+     </message>
+ </context>
+ <context>
+     <name>SipTransaction</name>
+     <message>
+         <source>Online</source>
+-        <translation></translation>
++        <translation>Online</translation>
+     </message>
+     <message>
+         <source>Busy</source>
+-        <translation></translation>
++        <translation>Ocupado</translation>
+     </message>
+     <message>
+         <source>Be Right Back</source>
+-        <translation></translation>
++        <translation>Volto Logo</translation>
+     </message>
+     <message>
+         <source>Away</source>
+-        <translation></translation>
++        <translation>Ausente</translation>
+     </message>
+     <message>
+         <source>On The Phone</source>
+-        <translation></translation>
++        <translation>No Telefone</translation>
+     </message>
+     <message>
+         <source>Out To Lunch</source>
+-        <translation></translation>
++        <translation>Em horário de Almoço</translation>
+     </message>
+ </context>
+ <context>
+     <name>VideoControl</name>
+     <message>
+         <source>Video Properties</source>
+-        <translation type="unfinished"></translation>
++        <translation>Propriedades de Video</translation>
+     </message>
+     <message>
+         <source>Preferred Video Codec</source>
+-        <translation type="unfinished"></translation>
++        <translation>Codec Preferido de Video</translation>
+     </message>
+     <message>
+         <source>H261</source>
+-        <translation type="unfinished"></translation>
++        <translation>H261</translation>
+     </message>
+     <message>
+         <source>H263</source>
+-        <translation type="unfinished"></translation>
++        <translation>H263</translation>
+     </message>
+     <message>
+         <source>ok button</source>
+-        <translation type="unfinished"></translation>
++        <translation>Botão Ok</translation>
+     </message>
+     <message>
+         <source>OK</source>
+-        <translation type="unfinished"></translation>
++        <translation>OK</translation>
+     </message>
+     <message>
+         <source>cancel button</source>
+-        <translation type="unfinished"></translation>
++        <translation>Botão Cancelar</translation>
+     </message>
+     <message>
+         <source>Cancel</source>
+-        <translation type="unfinished"></translation>
++        <translation>Cancelar</translation>
+     </message>
+ </context>
+ </TS>
+\ No newline at end of file

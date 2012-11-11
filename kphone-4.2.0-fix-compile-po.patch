@@ -1,0 +1,11 @@
+--- kphone/po/Makefile.in--	2005-07-27 10:48:48.000000000 +0200
++++ kphone/po/Makefile.in	2005-07-27 10:48:59.000000000 +0200
+@@ -11,7 +11,7 @@ QM=$(TS:.ts=.qm)
+ .SUFFIXES:.ts .qm
+ 
+ .ts.qm:
+-	lrelease $<
++	/usr/lib/qt3/bin/lrelease $<
+ 
+ all: $(QM)
+ 

@@ -1,0 +1,31 @@
+--- kphone/kphone/kphone.cpp--	2005-06-21 13:14:49.000000000 +0200
++++ kphone/kphone/kphone.cpp	2005-09-30 10:17:49.000000000 +0200
+@@ -35,7 +35,7 @@ KPhone::KPhone( unsigned int listenport,
+ 	Sip::setLocalAddress( settings.readEntry(
+ 		"/kphone/dissipate_addr", Sip::getLocalAddress() ) );
+ 	QString socketStr = settings.readEntry( "/kphone/General/SocketMode", "UDP" );
+-	
++
+ 	client = new SipClient( 0, 0, listenport, looseRoute, strictRoute, socketStr );
+ 	QString p = "/kphone/" + getUserPrefix() + "Registration/";
+ 	uristr = settings.readEntry( p + "SipUri" );
+@@ -211,7 +211,7 @@ void KPhone::showTestOptions( void )
+ 
+ void KPhone::showHelp( void )
+ {
+-	QMessageBox mb( "KPhone",tr(
++	QString tmp = QString( "<qt>" ) + tr(
+ 		"When starting KPhone for the first time, you should enter your identity information in the window appearing.\n"
+ 		"The information required for successful sipping are 'Full Name', 'User part of SIP URL' and 'Host part of SIP URL'.\n"
+ 		"Note for KPhone 3.xx users: copy '~/.kde/share/config/kphonerc' file to '~/.qt' directory.\n"
+@@ -233,7 +233,9 @@ void KPhone::showHelp( void )
+ 		"When adding contacts to your Phone Book, simply click Add and enter the person's real name, SIP identity and the optional\n"
+ 		"description. If you want your contacts to be displayed in the main UI, just check the 'Add Identity ...' box. After editing your\n"
+ 		"contacts you can return to the main UI by clicking Hide. All your selected contacts should now appear there. Making calls and \n"
+-		"sending instant messages to your contacts is easy with the RMB. Just click and select the function which you'd like to initiate.\n"),
++		"sending instant messages to your contacts is easy with the RMB. Just click and select the function which you'd like to initiate.\n" ) + QString( "</qt>" );
++        tmp = tmp.replace( "\n", "<br>" );
++	QMessageBox mb( "KPhone", tmp,
+ 		QMessageBox::NoIcon,
+ 		QMessageBox::Ok  | QMessageBox::Default,
+ 		QMessageBox::NoButton,

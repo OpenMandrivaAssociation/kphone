@@ -1,0 +1,17 @@
+--- kphone/po/Makefile.in--	2004-12-22 10:22:36.276890123 +0100
++++ kphone/po/Makefile.in	2004-12-22 10:23:00.070928456 +0100
+@@ -4,11 +4,11 @@ SHAREDIR=@datadir@/kphone
+ PO_DIR=$(SHAREDIR)/translations/
+ 
+ install:
+-	install --mode=0755 --directory $(PO_DIR)
++	install --mode=0755 --directory $(DESTDIR)$(PO_DIR)
+ 	for T in *.qm; do \
+-		install --mode=0644 $$T $(PO_DIR); \
++		install --mode=0644 $$T $(DESTDIR)$(PO_DIR); \
+ 	done
+ 
+ uninstall:
+-	rm -r $(PO_DIR)
++	rm -r $(DESTDIR)$(PO_DIR)
+ 

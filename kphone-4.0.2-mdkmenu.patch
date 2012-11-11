@@ -1,0 +1,5 @@
+diff -ruN kphone-3.14.orig/kphone/kphone.menu kphone-3.14/kphone/kphone.menu
+--- kphone-3.14.orig/kphone/kphone.menu	1969-12-31 16:00:00.000000000 -0800
++++ kphone-3.14/kphone/kphone.menu	2003-12-20 09:54:47.000000000 -0800
+@@ -0,0 +1 @@
++?package(kphone): needs="x11" kde_filename="kphone" section="Office/Communications/Phone" title="K-Phone" icon="kphone.png" command="kphone" longtitle="KPhone: A SIP phone for KDE" kde_opt="\\nDocPath=kphone/index.html\\nTerminal=0"
