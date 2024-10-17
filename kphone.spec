@@ -6,7 +6,7 @@ Version:	4.2
 Release:	%mkrel 10
 License:	GPLv2+
 Group:		Communications
-URL:		http://www.wirlab.net/kphone/index.html
+URL:		https://www.wirlab.net/kphone/index.html
 BuildRequires:	autoconf2.1
 BuildRequires:	kdelibs-devel >= 3.1.1
 BuildRequires:	openssl-devel >= 0.9.6j
